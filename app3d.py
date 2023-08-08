@@ -94,6 +94,8 @@ def get_fig():
         )
 
     fig3 = go.Figure(data=fig_papers.data + fig_centroids.data)
+    fig3.update_layout(height=1200)
+
                    # layout=layout)  
     return fig3
 
