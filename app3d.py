@@ -103,6 +103,7 @@ dfinfo = load_dfinfo()
 bigfig = get_fig()
 
 st.subheader("Papers and Topics")
+st.write("Mouse zoom in and out to hover over papers or topics. Papers are automatically clustered into subtopics. Topics are the bigger pink dots with representative keywords and phrases available on hover. Clicking on a topic or paper then triggers a report of the most profilic countries, affiliations, and authors associated with that topic.")
 selected_point = plotly_events(bigfig, click_event=True)
 if len(selected_point) == 0:
     st.stop()
